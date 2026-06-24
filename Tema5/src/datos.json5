@@ -1,0 +1,10 @@
+{
+  title: "JSON5 Ejemplo",
+  owner: {
+    name: "Juan Hernández Robles",
+    organization: "GitHub",
+    bio: "CEO y Cofundador de GitHub \n\
+            le gusta comer, ver TV y platicar.",
+    dob: "1979-05-27T07:32:00.0002",
+  },
+}

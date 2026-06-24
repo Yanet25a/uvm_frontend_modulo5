@@ -1,0 +1,25 @@
+const _ = require('lodash'); //se está importando y diciendo de donde viene el _
+const estilo = require('./estilo.css');
+const imagen = require('./mariob.jpg');
+const datos = require('./datos.csv');
+const yaml = require('./datos.yaml');
+const json5 = require('./datos.json5');
+const estilo1 =require('./estilo.scss');
+
+function componente(){
+    const elemento = document.createElement('div');
+    //muestra un saludo en la etiqueta div utilizando la biblioteca lodash
+    elemento.innerHTML = _.join(['Hola', datos[0][1]],' '); //recibe una cadena y un separador
+    //elemento.classList.add('hola');  utiliza la clase hoja de estilo.css
+    elemento.classList.add('fondo');  //utiliza la clase fondo de la hoja de estilo.scss
+    const miImagen = new Image();
+    miImagen.src = imagen;
+    elemento.appendChild(miImagen);
+    console.log(datos);
+    return elemento;
+}
+
+console.log(yaml.title);
+console.log(json5.owner.name);
+document.body.appendChild(componente());
+//document.body.classList.add('fondo');

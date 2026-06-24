@@ -1,0 +1,8 @@
+title: "YAML Ejemplo"
+owner:
+  name: José Hernández Robles
+  organization: Modelo
+  bio: |-
+    CEO y Cofundador de Modelo
+    le gusta comer, ver TV y platicar.
+  dob: 1980-05-27T07:32:00.0002Z
